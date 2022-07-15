@@ -1,0 +1,373 @@
+/*===============================================*/
+/* ============== IMPORTS  - START ============= */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+/* ============== IMPORTS  - END =============== */
+/*===============================================*/
+
+/*===============================================*/
+/* =============== FONT  - START =============== */
+
+body {
+    font-family: 'Patrick Hand', Arial;
+    }
+    
+/* =============== FONT  - END ================= */
+/*===============================================*/
+
+/*===============================================*/
+/* =============== ROOT  - START =============== */
+
+:root{
+    --primary-color: #446;
+    --primary-text-color: #fff;
+  }
+
+/* =============== ROOT  - END ================= */
+/*===============================================*/
+
+/* Change background image */
+.modal.login {
+    background-color: #1a1444;
+    background-image: url('../../cms/data/modules/app/app-8622.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+
+/* Content block adjustment */
+.modal .modal-dialog .modal-content {
+    max-height: 95%;
+    margin: 0 auto;
+  	background-color: #f3f3f3;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px hsl(0deg 0% 87%) !important;
+    box-shadow: 1px 5px 4px rgb(0 0 0 / 5%) !important;
+    padding: 10px;
+}
+
+.modal.login .modal-dialog .modal-content {
+    background-color: #fcfcfc;
+}
+
+.input-login.form-control.input-lg{
+    border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+    border: solid 3px hsl(0deg 0% 87%) !important;
+    box-shadow: 1px 5px 4px rgb(0 0 0 / 5%) !important;    
+}
+
+/*===============================================*/
+
+.header-container header {
+  box-shadow: unset;
+  background: transparent;
+}
+
+.nav {
+  box-shadow: unset;
+  background: transparent;
+}
+
+.nav .nav-item {
+  margin-left: 2px !important;
+}
+
+.user-badge.initials {
+  border: 1px solid #676767;
+}
+
+.c-module-header {
+  box-shadow: 0 3px 0 0 #676767;
+  background: transparent;
+}
+
+/* PAPER */
+.button-paper {
+    width: 275px;
+    height: 51.99px; 
+    background-color: #fbfbfb;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 0px 25px -18px;
+    color: #dedede;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    margin-bottom: 9px; 
+}
+
+.button-paper:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.button-paper:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+@media (min-width: 768px) {
+    .button-paper {
+     width: auto;
+     height: 51.99px;
+     margin-bottom: 9px; 
+     flex-direction: column;
+    }
+}
+
+.nav-minimized .button-paper {
+  width: 54.5px;
+}
+
+.nav-moving .button-paper {
+  width: auto;
+}
+
+.button-paper.active {
+    width: 230px;
+	height: 51.99px; 
+    background-color: #475B66;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #41403e;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    margin-bottom: 9px; 
+}
+
+.nav .active:not(.submenu) a {
+    box-shadow: unset;
+    background: #4460;
+}
+
+.content-block {
+    display: block;
+    margin-top: 15px;
+    padding: 20px;
+    background: #fcfcfc;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px #727272;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+}
+
+.media-item .inner .icon-holder {
+    position: relative;
+    overflow: hidden;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px hsl(0deg 0% 87%);
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+}
+
+.media-item:nth-child(3n+3) .content-block {
+    background: #f4f4f4;
+}
+.media-item:nth-child(3n+1) .content-block {
+    background: #e4e4e4;
+}
+
+.media-item:nth-child(3n+2) .content-block {
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+}
+
+.profile-mini .modal-dialog .modal-body .hero {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* Connect */
+.connect .tab-views .btn-view.active:focus {
+    background-color: var(--primary-color) !important;
+}
+
+.c-module__topbar,
+.c-module{
+  	background-color: transparent;
+}
+
+/* About this App */
+.subMenuNav {
+  	background-color: #606060;
+}
+
+/*===============================================*/
+/* ============== AGENDA  - START ============== */
+
+.agenda2 .date-header {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px #727272;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+    background-color: #fcfcfc;
+}
+
+.agenda2.single-session .session-wrapper .session-header, 
+.agenda2.single-breakout .session-wrapper .session-header {
+        border-radius: 255px 15px 225px 15px/15px 225px 0px 0px;
+        border: solid 3px #727272;
+        box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+}
+
+.agenda2.single-session .main-body, .agenda2.single-breakout .main-body {
+        border-radius: 0px 0px 225px 15px/15px 225px 15px 255px;
+        border: solid 3px #727272;
+        box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+        margin-top: -3px;
+        background-color: #fcfcfc;
+}
+
+.intro-block {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px #727272;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+    background-color: #fcfcfc;
+}
+
+.session-header{
+  background-color: var(--primary-color) !important;
+  color: var(--primary-text-color) !important;
+}
+
+.session-time,
+.session-title{
+  color: var(--primary-text-color) !important;
+}
+
+.reminder-outer .reminder-btn.add-reminder {
+  color: var(--primary-text-color) !important;
+}
+
+.pretty-bio-name {
+  color: var(--primary-text-color) !important;
+}
+
+.track-label::before,
+.tags-label::before{
+  color: var(--primary-text-color) !important;
+}
+
+.agenda2.single-session .main-body .session-resources .resource-item .icon-holder {
+    border-radius: 255px 15px 225px 15px/15px 225px 0px 0px;
+    border: solid 3px hsl(0deg 0% 87%);
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+}
+
+/* ============== AGENDA  - END ================ */
+/*===============================================*/
+
+/* Bios - START */
+
+@media only screen and (min-width: 768px) {
+    .profile .hero {
+        border-radius: 255px 15px 225px 15px/15px 225px 0px 0px;
+        border: solid 3px #727272;
+        box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .profile .biography {
+        border-radius: 0px 0px 225px 15px/15px 225px 15px 255px;
+        border: solid 3px #727272;
+        box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+    }
+}
+
+.media-item .inner .icon-holder {
+    border-radius: 0px 0px 225px 15px/15px 225px 15px 255px !important;
+    border: solid 3px #dedede;
+    box-shadow: 1px 1px 4px #00000094;
+}
+
+/* Bios - END */
+
+/* Tools - START */
+
+.tools {
+    margin-bottom: 5px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px hsl(0deg 0% 87%);
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    margin-bottom: 9px;
+}
+
+.tools:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.tools:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* PERCENTAGE MUST BE CHANGED IF MORE THAN 1 OPTION IN TOOLS */
+.tool-qa {
+  width: 100%;
+}
+
+/* Tools - END */
+
+/*===============================================*/
+/* ============= BUTTONS  - START ============== */
+
+.btn {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px #bababa !important;
+    box-shadow: 1px 5px 4px rgb(0 0 0 / 5%) !important;
+}
+
+.c-quick-filters .btn-group .btn {
+    margin-right: 5px;
+}
+
+.btn-live-stream{
+  	border: 2px solid #676767;
+}
+
+.subMenuNav .btn-link {
+  	color: white;
+}
+
+/* ============= BUTTONS  - END ================ */
+/*===============================================*/
+
+/*===============================================*/
+/* ============= DROPDOWN  - START ============= */
+
+.header-container .dropdown.open .dropdown-menu {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 3px #bababa;
+    box-shadow: 1px 5px 4px rgb(0 0 0 / 5%);
+    background-color: #fcfcfc;
+}
+
+.header-container .dropdown .dropdown-menu>li>a:hover, 
+.header-container .dropdown .dropdown-menu>li>a:focus {
+    width: 170px;
+    margin-left: 10px
+}
+
+/* ============= DROPDOWN  - END =============== */
+/*===============================================*/
