@@ -33,7 +33,7 @@ body {
 
 /* Change background image */
 .modal.login {
-    background-color: #1a1444;
+    background-color: #ffffff;
     background-image: url('https://raw.githubusercontent.com/Encore-DigitalServices/Chime-Designs/main/Paper/paper.jpg');
     background-repeat: no-repeat;
     background-position: bottom left;
