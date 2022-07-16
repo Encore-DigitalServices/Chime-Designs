@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-
 /* ============== IMPORTS  - END =============== */
 /*===============================================*/
 
@@ -12,6 +11,10 @@
 
 body {
     font-family: 'Patrick Hand', Arial;
+    background-image: url('https://raw.githubusercontent.com/Encore-DigitalServices/Chime-Designs/main/Paper/paper.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
     }
     
 /* =============== FONT  - END ================= */
@@ -31,7 +34,7 @@ body {
 /* Change background image */
 .modal.login {
     background-color: #1a1444;
-    background-image: url('../../cms/data/modules/app/app-8622.jpg');
+    background-image: url('https://raw.githubusercontent.com/Encore-DigitalServices/Chime-Designs/main/Paper/paper.jpg');
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
@@ -41,7 +44,7 @@ body {
 .modal .modal-dialog .modal-content {
     max-height: 95%;
     margin: 0 auto;
-  	background-color: #f3f3f3;
+    background-color: #f3f3f3;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border: solid 3px hsl(0deg 0% 87%) !important;
     box-shadow: 1px 5px 4px rgb(0 0 0 / 5%) !important;
