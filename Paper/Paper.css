@@ -1,4 +1,26 @@
 /*===============================================*/
+/* ========= CSS Paper Design - START ========== */
+
+/*****
+ *  GitHub Code Location: https://github.com/Encore-DigitalServices/Chime-Designs/tree/main/Paper
+ *  Name:                 Paper Design
+ *  Last Updated:         2022-07-20 (19:00EST)
+ *  Contributor(s):       Gabriel R
+ *  Chime Version(s):     v6.14
+ *  Verified to work with:
+                          - [Browser] - [Resolution]: 
+                          - Chrome Inspector - iPhone 5/SE: Landscape - VERIFIED YES
+                          - Chrome Inspector - iPhone 5/SE: Portrait - VERIFIED YES
+                          - Chrome Inspector - iPad:  Landscape - VERIFIED YES
+                          - Chrome Inspector - iPad:  Portrait - VERIFIED YES
+                          - Ultrawide above - 1440 x 2560: VERIFIED YES
+ * Accessibility:         - screenreader tested? YES
+                          - Aria?
+ * Description:
+		          Chime Paper Design
+ */
+
+/*===============================================*/
 /* ============== IMPORTS  - START ============= */
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -387,4 +409,7 @@ body {
 }
 
 /* ============ 6.14 Fixes  - END ============== */
+/*===============================================*/
+
+/* =========== CSS Paper Design - END ========== */
 /*===============================================*/
