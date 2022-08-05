@@ -1,0 +1,286 @@
+<!--
+ *  GitHub Code Location: https://github.com/Encore-DigitalServices/CodeSnippets-Leaderboard-Template
+ *  Name:                 Engagement Leaderboard
+ *  Date:                 2022-08-05 - 15:27 EST
+ *  Contributor(s):       Edisson F, Kenneth T, Gabriel R
+ *  Chime Version(s):     v6.11.0 ~ v6.14+
+ *  Verified to work with:
+                          - [Browser] - [Resolution]: 
+                          - Chrome Inspector - iPhone 5/SE: YES - almost  LANDSCAPE AND PORTRAIT
+                          - Chrome Inspector - iPad:        YES           LANDSCAPE AND PORTRAIT
+                          - Ultrawide above -  1440 x 2560: YES           LANDSCAPE AND PORTRAIT
+ * Accessibility:         - screenreader tested? Once, could use another one
+                          - Aria?                Possibly tested
+ * Description:
+                          Custom Leaderboard, with static point allocation table.
+                          Row gets highlighted if it is the user.
+                          Collapsible menu added for mobile
+-->
+
+<!-- Engagement Leaderboard - START -->
+<section class="engagement leaderboard wrapper scrollable">
+    <div class="container-fluid">
+      <!-- Engagement Points Breakdown (Manual) -->
+      <button type="button" class="collapsible force-click">How to get Points! (Click Here)</button>
+      <div class="engagement-container content-block mobile-collapsible force-click">
+        <div class="row">
+          <h2 class="engagement-title">Engagement Leaderboard</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Points</th>
+                  <th scope="col">Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Log In To Platform App</td>
+                  <td>10</td>
+                  <td>First Time</td>
+                </tr>
+                <tr>
+                  <td>View a Session in the Schedule</td>
+                  <td>10</td>
+                  <td>Per Session</td>
+                </tr>
+                <tr>
+                  <td>View a Speaker Bio</td>
+                  <td>5</td>
+                  <td>Per Speaker</td>
+                </tr>
+                <tr>
+                  <td>View a Sponsor</td>
+                  <td>15</td>
+                  <td>Per Sponsor</td>
+                </tr>
+                <tr>
+                  <td>View a Presentation</td>
+                  <td>10</td>
+                  <td>Per Presentation</td>
+                </tr>
+                <tr>
+                  <td>View a Resource</td>
+                  <td>10</td>
+                  <td>Per Resource</td>
+                </tr>
+                <tr>
+                  <td>Chat With a New Attendee</td>
+                  <td>5</td>
+                  <td>Per Chat Participation</td>
+                </tr>
+                <tr>
+                  <td>Exchange a New eBusiness Card</td>
+                  <td>5</td>
+                  <td>Per Accepted Exchange</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Your Engagement Points (Automatic) -->
+      <div class="yourscore-container content-block">
+        <div class="row">
+          <h2 class="yourscore-text">&nbsp;</h2>
+          <div class="yourscore-badges text-primary"></div>
+        </div>
+      </div>
+  
+      <!-- Leaderboard (Automatic) -->
+      <div class="leaderboard-container content-block">
+        <div class="row">
+          <h2 class="leaderboard-title">Leaderboard</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th id="leaderboard-ranking-title" scope="col">Ranking</th>
+                  <th id="leaderboard-name-title" scope="col">Name</th>
+                  <th id="leaderboard-points-title" scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="leaderboard-template">
+                  <td class="leaderboard-rank">&nbsp;</td>
+                  <td class="leaderboard-name">&nbsp;</td>
+                  <td class="leaderboard-points">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+      <div class="engagement-container content-block desktop">
+        <div class="row">
+          <h2 class="engagement-title">Engagement Leaderboard</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Points</th>
+                  <th scope="col">Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Log In To Platform App</td>
+                  <td>10</td>
+                  <td>First Time</td>
+                </tr>
+                <tr>
+                  <td>View a Session in the Schedule</td>
+                  <td>10</td>
+                  <td>Per Session</td>
+                </tr>
+                <tr>
+                  <td>View a Speaker Bio</td>
+                  <td>5</td>
+                  <td>Per Speaker</td>
+                </tr>
+                <tr>
+                  <td>View a Sponsor</td>
+                  <td>15</td>
+                  <td>Per Sponsor</td>
+                </tr>
+                <tr>
+                  <td>View a Presentation</td>
+                  <td>10</td>
+                  <td>Per Presentation</td>
+                </tr>
+                <tr>
+                  <td>View a Resource</td>
+                  <td>10</td>
+                  <td>Per Resource</td>
+                </tr>
+                <tr>
+                  <td>Chat With a New Attendee</td>
+                  <td>5</td>
+                  <td>Per Chat Participation</td>
+                </tr>
+                <tr>
+                  <td>Exchange a New eBusiness Card</td>
+                  <td>5</td>
+                  <td>Per Accepted Exchange</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <script>
+    // Settings
+    var leaderboardAmount = 50;
+  
+    var chimeVersion = null;
+    var appCms = "";
+    async function getChimeVersion() {
+      if (chimeVersion) return chimeVersion;
+      const appVersion = (await app.getAppVersionInfo()).split(".");
+      chimeVersion = {
+        major: parseInt(appVersion[0]),
+        minor: parseInt(appVersion[1]),
+        patch: parseInt(appVersion[2]),
+      };
+      return chimeVersion;
+    }
+  
+    async function cmsApp() {
+      if (appCms) return appCms;
+      const c = await getChimeVersion();
+      appCms = c.major <= 6 && c.minor <= 13 ? "cms" : "app";
+      return appCms;
+    }
+  
+    // Localisation
+    setTimeout(() => {
+      $(".leaderboard-container .leaderboard-title").text(
+        localisation.get("engagement_leaderboard")
+      );
+      $(".engagement-container .engagement-title").text(
+        localisation.get("engagement")
+      );
+    }, 150);
+  
+    (async () => {
+      // Leaderboard
+      ajax(`/${await cmsApp()}/services/gameification.asmx/leaderboard`, {
+        top: leaderboardAmount,
+      }).then((l) => {
+        const $leaderboardBody = $(".leaderboard-container table tbody");
+        const $leaderboardTemplate = $(".leaderboard-template", $leaderboardBody);
+        for (let pos of l.leaderboard) {
+          let numRank = pos.position.replace("=", "");
+          let rowClass = `rank-${numRank}`;
+          if (pos.id === user.id) {
+            rowClass += " bg-primary";
+          }
+          $leaderboardTemplate
+            .clone()
+            .removeClass("leaderboard-template")
+            .addClass(rowClass)
+            .find(".leaderboard-rank")
+            .text(pos.position)
+            .attr("data-rank", numRank)
+            .data("rank", numRank)
+            .end()
+            .find(".leaderboard-name")
+            .text(`${pos.firstName} ${pos.lastName}`)
+            .end()
+            .find(".leaderboard-points")
+            .text(pos.points)
+            .end()
+            .appendTo($leaderboardBody);
+        }
+        $leaderboardTemplate.remove();
+        pageModules[0].updateScrollers();
+      });
+  
+      // Your score and star badge generation
+      ajax(`/${await cmsApp()}/services/user.asmx/points`).then((ys) => {
+        $(".yourscore-container .yourscore-text")
+          .text(`${localisation.get("engagement_score")}: `)
+          .append($("<span>").addClass("text-primary").text(ys.points));
+        for (let i = 0; i < ys.badges; i++) {
+          $(".yourscore-container .yourscore-badges")
+            .append('<i class="fa fa-star" aria-hidden="true">&nbsp;</i>')
+            .attr({
+              title: `Badge Count: ${ys.badges}`,
+              "aria-label": `Badge Count: ${ys.badges}`,
+            });
+        }
+        pageModules[0].updateScrollers();
+      });
+    })();
+  
+    // Collaspible Menu
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+  
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+        pageModules[0].updateScrollers();
+      });
+    }
+  </script>
+  <!-- Engagement Leaderboard - END -->
