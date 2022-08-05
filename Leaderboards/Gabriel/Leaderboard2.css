@@ -1,0 +1,387 @@
+/*===============================================*/
+/* ==== CSS Leaderboard 2nd Design - START ===== */
+
+/*****
+ *  GitHub Code Location: https://github.com/Encore-DigitalServices/Chime-Designs/tree/main/Paper
+ *  Name:                 Leaderboard 2 Design
+ *  Last Updated:         2022-08-05 (15:23EST)
+ *  Contributor(s):       Gabriel R
+ *  Chime Version(s):     v6.14
+ *  Verified to work with:
+                          - [Browser] - [Resolution]: 
+                          - Chrome Inspector - iPhone 5/SE: Landscape - VERIFIED YES
+                          - Chrome Inspector - iPhone 5/SE: Portrait - VERIFIED YES
+                          - Chrome Inspector - iPad:  Landscape - VERIFIED YES
+                          - Chrome Inspector - iPad:  Portrait - VERIFIED YES
+                          - Ultrawide above - 1440 x 2560: VERIFIED YES
+ * Accessibility:         - screenreader tested? YES
+                          - Aria?
+ * Description:
+		          Second Leaderboard look designed by Gabriel with spacing between names and bright colours.
+ */
+
+/*===============================================*/
+/* ===  Nav & Header - START === */
+/* User Dropdown */
+.score-2 .header-container .dropdown .dropdown-toggle {
+    display: none;
+}
+
+/* Live Stream Button */
+.score-2 .js-launch-default-stream.btn-live-stream.btn.btn-danger {
+    display: none;
+}
+
+/* ===  Enlarge Header - START === */
+@media only screen and (min-width: 768px){
+
+    /* Config */
+    :root{
+        --header-height: 75px;
+    }
+
+    /* Shift nav menu down */
+    .nav .wrapper{
+        top: var(--header-height);
+    }
+
+    /* Enlarge logo to fit nicer */
+    .header-container .logo-wrapper{
+        width: calc(235px - 10px - 10px);
+        top: 0;
+        background-size: contain;
+        background-position: center;
+        margin: 0 25px 0 0;
+    }
+
+    /* Enlarge heights where needed */
+    .header-container .logo-wrapper,
+    .header-container .right,
+    #header{
+        height: var(--header-height);
+    }
+
+    /* Shift page container down */
+    .page-container{
+        padding-top: var(--header-height);
+    }
+}
+/* ===  Enlarge Header - END === */
+
+/* ===  Nav & Header - END === */
+/*===============================================*/
+
+.score-2 .leaderboard-container.content-block {
+    background-color: #373c49;
+}
+
+.score-2 .leaderboard-container h2, 
+.score-2 .leaderboard-container {
+    color: white;
+}
+
+.score-2 .leaderboard-container tr {
+    background: linear-gradient(0deg, rgba(250,104,85,1) 0%, rgba(194,68,72,1) 100%);
+}
+
+.score-2 .codesnippets .engagement.leaderboard.wrapper.scrollable table {
+    border: none !important;
+}
+
+.score-2 tr.bg-primary {
+    background: #fa6855;
+}
+
+.score-2 .table, .score-2 table {
+    border-collapse: collapse !important;
+}
+
+.score-2 .yourscore-badges.text-primary {
+    color: gold;
+}
+
+.score-2 .yourscore-text, .score-2 .yourscore-text .text-primary {
+    color: white;
+}
+
+.score-2 .yourscore-container.content-block {
+    background-color: #373c49;
+}
+
+.score-2 .engagement-container.content-block h2, 
+.score-2 .engagement-container.content-block .row, 
+.score-2 .engagement-container.content-block {
+    color: white;
+    background-color: #373c49;
+}
+
+.score-2 .page-container {
+    background-image: url("/app/assets/code/leaderboard.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.score-2 .content-block {
+    border: 1px solid #e6e6e6;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 27%);
+}
+
+/* Add divider between activities and points */
+.codesnippets.score-2 .engagement.leaderboard.wrapper.scrollable .leaderboard-container.content-block table td:not(:first-of-type) {
+    border-left: none;
+}
+
+.score-2 .leaderboard-container.content-block .table>thead>tr>th, 
+.score-2 .leaderboard-container.content-block .table>thead>tr>td, 
+.score-2 .leaderboard-container.content-block .table>tbody>tr>th, 
+.score-2 .leaderboard-container.content-block .table>tbody>tr>td, 
+.score-2 .leaderboard-container.content-block .table>tfoot>tr>th, 
+.score-2 .leaderboard-container.content-block .table>tfoot>tr>td {
+    border-bottom: 6px solid #fff0;
+    font-size: 250%;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.score-2 .engagement-container.content-block {
+    font-size: 250%;
+}
+
+.score-2 h2 {
+    font-size: 55px;
+}
+
+/* 1st TITLE - START */
+.score-2 .header-container header {
+    background-color: gold;
+    box-shadow: 0 1px 7px #ccc;
+    opacity: 1;
+}
+
+.score-2 .header-container .page-title {
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgb(63 63 63 / 35%);
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    overflow: hidden;
+    flex-shrink: 3;
+}
+
+/* 1st TITLE - END */
+/* 2nd TITLE - START */
+/* .score-2 .header-container header {
+    background-color: gold;
+    box-shadow: 0 1px 7px #ccc;
+    opacity: 1;
+}
+
+.score-2 .header-container .page-title {
+    color: rgba(0,0,0,0.6);
+    text-shadow: 0 1px 0 #a8a8a8, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 0px rgb(0 0 0 / 25%), 0 0px 0px rgb(0 0 0 / 20%);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    overflow: hidden;
+    flex-shrink: 3;
+} */
+
+/* 2nd TITLE - END */
+/* 3rd TITLE - STARRT */
+/* .score-2 .header-container .page-title {
+    text-shadow: 0 1px 0 #a8a8a8, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 0px rgb(0 0 0 / 25%), 0 0px 0px rgb(0 0 0 / 20%);
+    font-size: 35px;
+    background-color: #ffc107;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgb(0 0 0 / 50%) 0px 3px 3px;
+}
+
+.score-2 .header-container header {
+    background-color: #373c49;
+    box-shadow: 0 1px 7px #ccc;
+    opacity: 1;
+} */
+
+/* 3rd TITLE - END */
+@media only screen and (max-width: 768px) {
+    .score-2 .leaderboard-container.content-block .table>thead>tr>th, 
+    .score-2 .leaderboard-container.content-block .table>thead>tr>td, 
+    .score-2 .leaderboard-container.content-block .table>tbody>tr>th, 
+    .score-2 .leaderboard-container.content-block .table>tbody>tr>td, 
+    .score-2 .leaderboard-container.content-block .table>tfoot>tr>th, 
+    .score-2 .leaderboard-container.content-block .table>tfoot>tr>td {
+        border-bottom: 6px solid #fff0;
+        font-size: 90% !important;
+        font-weight: 900;
+        font-weight: 900;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .score-2 .engagement-container.content-block {
+        font-size: 70% !important;
+    }
+
+    .score-2 h2 {
+        font-size: 150% !important;
+    }
+}
+
+/*========================================================*/
+/* SECOND LEADERBOARD LOOK - HIDE BELOW TO SEE OTHER LOOK */
+
+.score-2 td.leaderboard-rank {
+    background-color: #19326b;
+    color: white;
+}
+
+.score-2 tr.rank-1 td.leaderboard-rank {
+    background-color: gold;
+    color: #474747;
+}
+
+.score-2 tr.rank-2 td.leaderboard-rank {
+    background-color: silver;
+    color: #474747;
+}
+
+.score-2 tr.rank-3 td.leaderboard-rank {
+    background-color: #761E1E;
+    color: #ABABAB;
+}
+
+.score-2 .leaderboard-container tr {
+    background: white;
+    color: #19326b;
+}
+
+.score-2 tr.bg-primary .leaderboard-name, 
+.score-2 tr.bg-primary .leaderboard-points {
+    background-color: #ffc107;
+}
+
+/* SECOND LEADERBOARD LOOK - HIDE ABOVE TO SEE OTHER LOOK */
+/*========================================================*/
+
+/* Center Hero Bar Page/Module Titles with Page Container instead of Viewer Width */
+.nav-maximized .score-2 .header-container .page-title {
+    padding-left: 0px;
+}
+
+.score-2 .nav-toggle:focus span, 
+.score-2 .nav-toggle:focus span:before, 
+.score-2 .nav-toggle:focus span:after {
+    background-color: #446;
+}
+
+.score-2 .nav-toggle.toggled span {
+    background-color: transparent;
+}
+
+.ua-desktop .score-2 .mobile-collapsible {
+    display: none;
+}
+
+.ua-desktop .score-2 .yourscore-container {
+    display: none;
+}
+
+.ua-desktop .score-2 .collapsible {
+    display: none;
+}
+
+.ua-mobile .score-2 .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 32px;
+}
+
+.ua-mobile .score-2 .active.collapsible, 
+.ua-mobile .score-2 .collapsible:hover {
+    background-color: #373c49;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+}
+
+.ua-mobile .score-2 .engagement-container.content-block {
+    padding: 0 18px;
+    display: none;
+    overflow: auto;
+    box-shadow: none;
+}
+
+.ua-mobile .score-2 .engagement-container.content-block.mobile-collapsible {
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    box-shadow: 1px 1px 4pxrgba(0, 0, 0, 0.05);
+}
+
+.score-2 button.collapsible.force-click {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    outline: none;
+    margin-top: 15px;
+    font-size: 150%;
+}
+
+.score-2 .active.collapsible.force-click, 
+.score-2 .collapsible.force-click:hover {
+    background-color: #3c3c3c;
+}
+
+.score-2 .engagement-container.content-block.mobile-collapsible.force-click {
+    display: none;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+}
+
+.score-2 .leaderboard-container.content-block {
+    background: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+.score-2 .leaderboard-title {
+    display: none;
+}
+
+.nav-minimized .tools {
+    width: 100%;
+}
+
+.score-2 .engagement-container.content-block h2, 
+.score-2 .engagement-container.content-block .row, 
+.score-2 .engagement-container.content-block {
+    background-color: white;
+    color: #19326b;
+}
+
+/* ===== CSS Leaderboard 2nd Design - END ====== */
+/*===============================================*/
