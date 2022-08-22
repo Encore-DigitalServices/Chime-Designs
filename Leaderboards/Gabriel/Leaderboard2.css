@@ -152,6 +152,15 @@
     font-size: 55px;
 }
 
+/* How to get more points dropdown arrow animation */
+.score-2 .collapsible.force-click.active>i {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    transition: all .1s ease-in;
+}
+
 /* 1st TITLE - START */
 .score-2 .header-container header {
     background-color: gold;
@@ -237,27 +246,26 @@
     }
 }
 
-/*========================================================*/
-/* SECOND LEADERBOARD LOOK - HIDE BELOW TO SEE OTHER LOOK */
+/*==================================================*/
+/* PRIMARY LEADERBOARD CHANGES - RANK,NAME & POINTS */
 
 .score-2 td.leaderboard-rank {
-    background-color: #19326b;
-    color: white;
+    background-color: #fff3d5;
+    color: black;
 }
-
 .score-2 tr.rank-1 td.leaderboard-rank {
     background-color: gold;
-    color: #474747;
+    color: #000000;
 }
 
 .score-2 tr.rank-2 td.leaderboard-rank {
-    background-color: silver;
-    color: #474747;
+    background-color: #c3af7e;
+    color: #000000;
 }
 
 .score-2 tr.rank-3 td.leaderboard-rank {
-    background-color: #761E1E;
-    color: #ABABAB;
+    background-color: #db9954;
+    color: #000000;
 }
 
 .score-2 .leaderboard-container tr {
@@ -265,13 +273,13 @@
     color: #19326b;
 }
 
-.score-2 tr.bg-primary .leaderboard-name, 
-.score-2 tr.bg-primary .leaderboard-points {
-    background-color: #ffc107;
+.score-2 tr.bg-primary .leaderboard-name,
+.score-2 tr.bg-primary .leaderboard-points{
+    background-color: #f7f7f7;
 }
 
-/* SECOND LEADERBOARD LOOK - HIDE ABOVE TO SEE OTHER LOOK */
-/*========================================================*/
+/* PRIMARY LEADERBOARD CHANGES - RANK,NAME & POINTS */
+/*==================================================*/
 
 /* Center Hero Bar Page/Module Titles with Page Container instead of Viewer Width */
 .nav-maximized .score-2 .header-container .page-title {
