@@ -4,7 +4,7 @@
 /*****
  *  GitHub Code Location: https://github.com/Encore-DigitalServices/Chime-Designs/tree/main/Paper
  *  Name:                 Leaderboard 2 Design
- *  Last Updated:         2022-08-05 (15:23EST)
+ *  Last Updated:         2022-08-22 (14:55EST)
  *  Contributor(s):       Gabriel R
  *  Chime Version(s):     v6.14
  *  Verified to work with:
@@ -222,6 +222,7 @@
 } */
 
 /* 3rd TITLE - END */
+
 @media only screen and (max-width: 768px) {
     .score-2 .leaderboard-container.content-block .table>thead>tr>th, 
     .score-2 .leaderboard-container.content-block .table>thead>tr>td, 
