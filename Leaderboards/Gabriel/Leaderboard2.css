@@ -279,6 +279,10 @@
     background-color: #f7f7f7;
 }
 
+.score-2 .leaderboard-container.content-block .table .leaderboard-name,
+th#leaderboard-name-title {
+  padding-left: 40px;
+}
 /* PRIMARY LEADERBOARD CHANGES - RANK,NAME & POINTS */
 /*==================================================*/
 
