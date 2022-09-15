@@ -1,10 +1,10 @@
 /*===============================================*/
-/* ==== CSS Leaderboard 2nd Design - START ===== */
+/* ==== CSS Leaderboard 1st Design - START ===== */
 
 /*****
- *  GitHub Code Location: https://github.com/Encore-DigitalServices/Chime-Designs/blob/main/Leaderboards/Gabriel/Leaderboard2.css
+ *  GitHub Code Location: https://github.com/Encore-DigitalServices/Chime-Designs/blob/main/Leaderboards/Gabriel/Leaderboard-1.css
  *  Name:                 Leaderboard 2 Design
- *  Last Updated:         2022-08-22 (14:55EST)
+ *  Last Updated:         2022-09-15 (15:51 EST)
  *  Contributor(s):       Gabriel R
  *  Chime Version(s):     v6.14
  *  Verified to work with:
@@ -17,18 +17,18 @@
  * Accessibility:         - screenreader tested? YES
                           - Aria?
  * Description:
-		          Kiosk mode. Spacing between names and bright colours. Header is enlarged. Collapsible menu has been added for mobile.
+		          Spacing between names and bright colours. Header is enlarged. Collapsible menu has been added.
  */
 
 /*===============================================*/
 /* ===  Nav & Header - START === */
 /* User Dropdown */
-.score-2 .header-container .dropdown .dropdown-toggle {
+.leaderboard-1 .header-container .dropdown .dropdown-toggle {
     display: none;
 }
 
 /* Live Stream Button */
-.score-2 .js-launch-default-stream.btn-live-stream.btn.btn-danger {
+.leaderboard-1 .js-launch-default-stream.btn-live-stream.btn.btn-danger {
     display: none;
 }
 
@@ -71,72 +71,79 @@
 /* ===  Nav & Header - END === */
 /*===============================================*/
 
-.score-2 .leaderboard-container.content-block {
+.leaderboard-1 .leaderboard-container.content-block {
     background-color: #373c49;
 }
 
-.score-2 .leaderboard-container h2, 
-.score-2 .leaderboard-container {
+.leaderboard-1 .leaderboard-container h2, 
+.leaderboard-1 .leaderboard-container {
     color: white;
 }
 
-.score-2 .leaderboard-container tr {
+.leaderboard-1 .leaderboard-container tr {
     background: linear-gradient(0deg, rgba(250,104,85,1) 0%, rgba(194,68,72,1) 100%);
 }
 
-.score-2 .codesnippets .engagement.leaderboard.wrapper.scrollable table {
+.leaderboard-1 .codesnippets .engagement.leaderboard.wrapper.scrollable table {
     border: none !important;
 }
 
-.score-2 tr.bg-primary {
+.leaderboard-1 tr.bg-primary {
     background: #fa6855;
 }
 
-.score-2 .table, .score-2 table {
+.leaderboard-1 .table, .leaderboard-1 table {
     border-collapse: collapse !important;
 }
 
-.score-2 .yourscore-badges.text-primary {
+/* Star Badges */
+.ua-desktop .leaderboard-1 .yourscore-badges {
+    font-size: 28px;
+    text-align: center;
+}
+
+.leaderboard-1 .yourscore-badges.text-primary {
     color: gold;
 }
 
-.score-2 .yourscore-text, .score-2 .yourscore-text .text-primary {
-    color: white;
+.leaderboard-1 .yourscore-text, 
+.leaderboard-1 .yourscore-text .text-primary {
+    color: #19326b;
 }
 
-.score-2 .yourscore-container.content-block {
+.leaderboard-1 .yourscore-container.content-block {
+    background-color: #fff;
+}
+
+.leaderboard-1 .engagement-container.content-block h2, 
+.leaderboard-1 .engagement-container.content-block .row, 
+.leaderboard-1 .engagement-container.content-block {
+    color: white;
     background-color: #373c49;
 }
 
-.score-2 .engagement-container.content-block h2, 
-.score-2 .engagement-container.content-block .row, 
-.score-2 .engagement-container.content-block {
-    color: white;
-    background-color: #373c49;
-}
-
-.score-2 .page-container {
+.leaderboard-1 .page-container {
     background-image: url("/app/assets/code/leaderboard.jpg") !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 
-.score-2 .content-block {
+.leaderboard-1 .content-block {
     border: 1px solid #e6e6e6;
     box-shadow: 1px 1px 4px rgb(0 0 0 / 27%);
 }
 
 /* Add divider between activities and points */
-.codesnippets.score-2 .engagement.leaderboard.wrapper.scrollable .leaderboard-container.content-block table td:not(:first-of-type) {
+.codesnippets.leaderboard-1 .engagement.leaderboard.wrapper.scrollable .leaderboard-container.content-block table td:not(:first-of-type) {
     border-left: none;
 }
 
-.score-2 .leaderboard-container.content-block .table>thead>tr>th, 
-.score-2 .leaderboard-container.content-block .table>thead>tr>td, 
-.score-2 .leaderboard-container.content-block .table>tbody>tr>th, 
-.score-2 .leaderboard-container.content-block .table>tbody>tr>td, 
-.score-2 .leaderboard-container.content-block .table>tfoot>tr>th, 
-.score-2 .leaderboard-container.content-block .table>tfoot>tr>td {
+.leaderboard-1 .leaderboard-container.content-block .table>thead>tr>th, 
+.leaderboard-1 .leaderboard-container.content-block .table>thead>tr>td, 
+.leaderboard-1 .leaderboard-container.content-block .table>tbody>tr>th, 
+.leaderboard-1 .leaderboard-container.content-block .table>tbody>tr>td, 
+.leaderboard-1 .leaderboard-container.content-block .table>tfoot>tr>th, 
+.leaderboard-1 .leaderboard-container.content-block .table>tfoot>tr>td {
     border-bottom: 6px solid #fff0;
     font-size: 250%;
     font-weight: 900;
@@ -144,16 +151,16 @@
     padding-bottom: 30px;
 }
 
-.score-2 .engagement-container.content-block {
+.leaderboard-1 .engagement-container.content-block {
     font-size: 250%;
 }
 
-.score-2 h2 {
+.leaderboard-1 h2 {
     font-size: 55px;
 }
 
 /* How to get more points dropdown arrow animation */
-.score-2 .collapsible.force-click.active>i {
+.leaderboard-1 .collapsible.force-click.active>i {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
@@ -162,13 +169,13 @@
 }
 
 /* 1st TITLE - START */
-.score-2 .header-container header {
+.leaderboard-1 .header-container header {
     background-color: gold;
     box-shadow: 0 1px 7px #ccc;
     opacity: 1;
 }
 
-.score-2 .header-container .page-title {
+.leaderboard-1 .header-container .page-title {
     color: rgba(0,0,0,0.6);
     text-shadow: 2px 2px 3px rgb(63 63 63 / 35%);
     font-size: 35px;
@@ -183,13 +190,13 @@
 
 /* 1st TITLE - END */
 /* 2nd TITLE - START */
-/* .score-2 .header-container header {
+/* .leaderboard-1 .header-container header {
     background-color: gold;
     box-shadow: 0 1px 7px #ccc;
     opacity: 1;
 }
 
-.score-2 .header-container .page-title {
+.leaderboard-1 .header-container .page-title {
     color: rgba(0,0,0,0.6);
     text-shadow: 0 1px 0 #a8a8a8, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 0px rgb(0 0 0 / 25%), 0 0px 0px rgb(0 0 0 / 20%);
     font-size: 30px;
@@ -204,7 +211,7 @@
 
 /* 2nd TITLE - END */
 /* 3rd TITLE - STARRT */
-/* .score-2 .header-container .page-title {
+/* .leaderboard-1 .header-container .page-title {
     text-shadow: 0 1px 0 #a8a8a8, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 0px rgb(0 0 0 / 25%), 0 0px 0px rgb(0 0 0 / 20%);
     font-size: 35px;
     background-color: #ffc107;
@@ -215,7 +222,7 @@
     text-shadow: rgb(0 0 0 / 50%) 0px 3px 3px;
 }
 
-.score-2 .header-container header {
+.leaderboard-1 .header-container header {
     background-color: #373c49;
     box-shadow: 0 1px 7px #ccc;
     opacity: 1;
@@ -224,12 +231,12 @@
 /* 3rd TITLE - END */
 
 @media only screen and (max-width: 768px) {
-    .score-2 .leaderboard-container.content-block .table>thead>tr>th, 
-    .score-2 .leaderboard-container.content-block .table>thead>tr>td, 
-    .score-2 .leaderboard-container.content-block .table>tbody>tr>th, 
-    .score-2 .leaderboard-container.content-block .table>tbody>tr>td, 
-    .score-2 .leaderboard-container.content-block .table>tfoot>tr>th, 
-    .score-2 .leaderboard-container.content-block .table>tfoot>tr>td {
+    .leaderboard-1 .leaderboard-container.content-block .table>thead>tr>th, 
+    .leaderboard-1 .leaderboard-container.content-block .table>thead>tr>td, 
+    .leaderboard-1 .leaderboard-container.content-block .table>tbody>tr>th, 
+    .leaderboard-1 .leaderboard-container.content-block .table>tbody>tr>td, 
+    .leaderboard-1 .leaderboard-container.content-block .table>tfoot>tr>th, 
+    .leaderboard-1 .leaderboard-container.content-block .table>tfoot>tr>td {
         border-bottom: 6px solid #fff0;
         font-size: 90% !important;
         font-weight: 900;
@@ -238,11 +245,11 @@
         padding-bottom: 30px;
     }
 
-    .score-2 .engagement-container.content-block {
+    .leaderboard-1 .engagement-container.content-block {
         font-size: 70% !important;
     }
 
-    .score-2 h2 {
+    .leaderboard-1 h2 {
         font-size: 150% !important;
     }
 }
@@ -250,36 +257,36 @@
 /*==================================================*/
 /* PRIMARY LEADERBOARD CHANGES - RANK,NAME & POINTS */
 
-.score-2 td.leaderboard-rank {
+.leaderboard-1 td.leaderboard-rank {
     background-color: #fff3d5;
     color: black;
 }
-.score-2 tr.rank-1 td.leaderboard-rank {
+.leaderboard-1 tr.rank-1 td.leaderboard-rank {
     background-color: gold;
     color: #000000;
 }
 
-.score-2 tr.rank-2 td.leaderboard-rank {
+.leaderboard-1 tr.rank-2 td.leaderboard-rank {
     background-color: #c3af7e;
     color: #000000;
 }
 
-.score-2 tr.rank-3 td.leaderboard-rank {
+.leaderboard-1 tr.rank-3 td.leaderboard-rank {
     background-color: #db9954;
     color: #000000;
 }
 
-.score-2 .leaderboard-container tr {
+.leaderboard-1 .leaderboard-container tr {
     background: white;
     color: #19326b;
 }
 
-.score-2 tr.bg-primary .leaderboard-name,
-.score-2 tr.bg-primary .leaderboard-points{
+.leaderboard-1 tr.bg-primary .leaderboard-name,
+.leaderboard-1 tr.bg-primary .leaderboard-points{
     background-color: #f7f7f7;
 }
 
-.score-2 .leaderboard-container.content-block .table .leaderboard-name,
+.leaderboard-1 .leaderboard-container.content-block .table .leaderboard-name,
 th#leaderboard-name-title {
   padding-left: 40px;
 }
@@ -287,33 +294,35 @@ th#leaderboard-name-title {
 /*==================================================*/
 
 /* Center Hero Bar Page/Module Titles with Page Container instead of Viewer Width */
-.nav-maximized .score-2 .header-container .page-title {
+.nav-maximized .leaderboard-1 .header-container .page-title {
     padding-left: 0px;
 }
 
-.score-2 .nav-toggle:focus span, 
-.score-2 .nav-toggle:focus span:before, 
-.score-2 .nav-toggle:focus span:after {
+.leaderboard-1 .nav-toggle:focus span, 
+.leaderboard-1 .nav-toggle:focus span:before, 
+.leaderboard-1 .nav-toggle:focus span:after {
     background-color: #446;
 }
 
-.score-2 .nav-toggle.toggled span {
+.leaderboard-1 .nav-toggle.toggled span {
     background-color: transparent;
 }
 
-.ua-desktop .score-2 .mobile-collapsible {
+/*
+.ua-desktop .leaderboard-1 .mobile-collapsible {
     display: none;
 }
 
-.ua-desktop .score-2 .yourscore-container {
+.ua-desktop .leaderboard-1 .collapsible {
     display: none;
 }
 
-.ua-desktop .score-2 .collapsible {
+.ua-desktop .leaderboard-1 .yourscore-container {
     display: none;
 }
+*/
 
-.ua-mobile .score-2 .collapsible {
+.ua-mobile .leaderboard-1 .collapsible {
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -325,21 +334,21 @@ th#leaderboard-name-title {
     font-size: 32px;
 }
 
-.ua-mobile .score-2 .active.collapsible, 
-.ua-mobile .score-2 .collapsible:hover {
+.ua-mobile .leaderboard-1 .active.collapsible, 
+.ua-mobile .leaderboard-1 .collapsible:hover {
     background-color: #373c49;
     border: 1px solid #e6e6e6;
     border-bottom: none;
 }
 
-.ua-mobile .score-2 .engagement-container.content-block {
+.ua-mobile .leaderboard-1 .engagement-container.content-block {
     padding: 0 18px;
     display: none;
     overflow: auto;
     box-shadow: none;
 }
 
-.ua-mobile .score-2 .engagement-container.content-block.mobile-collapsible {
+.ua-mobile .leaderboard-1 .engagement-container.content-block.mobile-collapsible {
     margin-top: 0px;
     padding: 20px;
     border-radius: 0px 0px 4px 4px;
@@ -348,9 +357,10 @@ th#leaderboard-name-title {
     box-shadow: 1px 1px 4pxrgba(0, 0, 0, 0.05);
 }
 
-.score-2 button.collapsible.force-click {
-    background-color: #777;
-    color: white;
+.leaderboard-1 button.collapsible.force-click {
+    background-color: #fff3d5;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -361,12 +371,13 @@ th#leaderboard-name-title {
     font-size: 150%;
 }
 
-.score-2 .active.collapsible.force-click, 
-.score-2 .collapsible.force-click:hover {
-    background-color: #3c3c3c;
+.leaderboard-1 .active.collapsible.force-click, 
+.leaderboard-1 .collapsible.force-click:hover {
+    background-color: #19326b;
+    color: white;
 }
 
-.score-2 .engagement-container.content-block.mobile-collapsible.force-click {
+.leaderboard-1 .engagement-container.content-block.mobile-collapsible.force-click {
     display: none;
     margin-top: 0px;
     padding: 20px;
@@ -375,13 +386,13 @@ th#leaderboard-name-title {
     box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
 }
 
-.score-2 .leaderboard-container.content-block {
+.leaderboard-1 .leaderboard-container.content-block {
     background: none !important;
     border: none;
     box-shadow: none;
 }
 
-.score-2 .leaderboard-title {
+.leaderboard-1 .leaderboard-title {
     display: none;
 }
 
@@ -389,12 +400,12 @@ th#leaderboard-name-title {
     width: 100%;
 }
 
-.score-2 .engagement-container.content-block h2, 
-.score-2 .engagement-container.content-block .row, 
-.score-2 .engagement-container.content-block {
+.leaderboard-1 .engagement-container.content-block h2, 
+.leaderboard-1 .engagement-container.content-block .row, 
+.leaderboard-1 .engagement-container.content-block {
     background-color: white;
     color: #19326b;
 }
 
-/* ===== CSS Leaderboard 2nd Design - END ====== */
+/* ===== CSS Leaderboard 1st Design - END ====== */
 /*===============================================*/
