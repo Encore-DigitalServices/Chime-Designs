@@ -22,15 +22,6 @@
 
 /*===============================================*/
 /* ===  Nav & Header - START === */
-/* User Dropdown */
-.leaderboard-1 .header-container .dropdown .dropdown-toggle {
-    display: none;
-}
-
-/* Live Stream Button */
-.leaderboard-1 .js-launch-default-stream.btn-live-stream.btn.btn-danger {
-    display: none;
-}
 
 /* ===  Enlarge Header - START === */
 @media only screen and (min-width: 768px){
@@ -294,8 +285,10 @@ th#leaderboard-name-title {
 /*==================================================*/
 
 /* Center Hero Bar Page/Module Titles with Page Container instead of Viewer Width */
-.nav-maximized .leaderboard-1 .header-container .page-title {
-    padding-left: 0px;
+@media only screen and (min-width: 1200px) {
+    .nav-maximized .leaderboard-1 .header-container .page-title {
+        padding-left: 160px;
+    }
 }
 
 .leaderboard-1 .nav-toggle:focus span, 
